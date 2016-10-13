@@ -3,6 +3,11 @@
 // You'll have to wait for you page to load to assign events to the elements created in your index.html file
 $(function() {
     // Use $.get to read in your `data/students.csv` dataset: remember, you must be running a local server
+    $.get('data/students/csv', function(data, error) {
+    	var parsedData = Papa.parse(data) {
+
+    	}
+    }
 
         // Parse the data using Papa.parse
 
@@ -20,6 +25,4 @@ $(function() {
 
 
         // Select your `sandbox` section, and append your table to it
-
-    });
-});
+ 
